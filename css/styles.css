@@ -88,7 +88,7 @@ body {
 /* ======================== COMPONENTS ======================== */
 
 .logo {
-  margin-right: 76px;
+  /* margin-right: 76px; */
 
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -161,9 +161,9 @@ body {
   color: var(--pressed-state-color);
 } */
 
-.current {
+/* .current {
   color: var(--pressed-state-color);
-}
+} */
 
 /* .current::after {
   content: '';
@@ -195,14 +195,14 @@ body {
   margin-right: 40px;
 }
 
-.contact-mail,
+/* .contact-mail,
 .contact-phone {
   transition: color var(--transition-duration-func);
 
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-}
+} */
 
 .contact-mail:hover,
 .contact-mail:focus {
@@ -332,9 +332,9 @@ body {
 
 /* =============================== About work ========================== */
 
-.about-work {
+/* .about-work {
   padding-top: 0;
-}
+} */
 
 .about-work-list {
   display: flex;

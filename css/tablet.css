@@ -2,7 +2,74 @@
   .container {
     width: 766px;
   }
+
+  .logo {
+    margin-right: 76px;
+  }
+
   /* ============ Header =============== */
+
+  .page-navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .menu-link {
+    position: relative;
+    transition: color var(--transition-duration-func);
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+  }
+
+  .menu-link:hover,
+  .menu-link:focus {
+    color: var(--pressed-state-color);
+  }
+
+  .current {
+    color: var(--pressed-state-color);
+  }
+
+  .current::after {
+    content: '';
+
+    position: absolute;
+    left: 0px;
+    top: 43px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: var(--pressed-state-color);
+  }
+
+  .mobile-menu-open {
+    display: none;
+  }
+
+  .contact-mail,
+  .contact-phone {
+    transition: color var(--transition-duration-func);
+
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--text-color);
+  }
 
   /* ========== Our advantages =========== */
 
@@ -27,6 +94,8 @@
   /* ================= Footer ================= */
 
   .footer-container {
+    display: flex;
+    flex-wrap: wrap;
     width: 582px;
   }
 
@@ -48,6 +117,12 @@
 /* ==================================================================== */
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  /* ================== Header ===================== */
+
+  .header-address {
+    margin-bottom: -14px;
+  }
+
   /* ========== Our advantages =========== */
 
   .advantages-list-item:not(:nth-last-child(-n + 2)) {
@@ -84,10 +159,6 @@
   }
 
   /* ================= Footer ================= */
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   .media {
     margin-left: 24px;
@@ -96,6 +167,7 @@
 
 /* ============================================================== */
 /* ================================================================ */
+
 @media screen and (max-width: 1199px) {
   /* ========== Our advantages =========== */
   .advantages-text {
@@ -111,4 +183,10 @@
   }
 
   /* =============== Our team =============== */
+
+  /* ================= Footer ================= */
+
+  .footer-box {
+    margin-bottom: 72px;
+  }
 }
