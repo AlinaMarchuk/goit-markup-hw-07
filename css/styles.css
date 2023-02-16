@@ -28,6 +28,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .list {
@@ -48,17 +49,26 @@ body {
   background-color: var(--background-color);
 }
 
-.container {
+/* .container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+} */
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
 }
 
 .visually-hidden {
@@ -122,21 +132,21 @@ body {
   justify-content: space-between;
 }
 
-.page-navigation {
+/* .page-navigation {
   display: flex;
   align-items: center;
-}
+} */
 
-.menu {
+/* .menu {
   display: flex;
   align-items: center;
-}
+} */
 
-.menu-item:not(:last-child) {
+/* .menu-item:not(:last-child) {
   margin-right: 40px;
-}
+} */
 
-.menu-link {
+/* .menu-link {
   position: relative;
   transition: color var(--transition-duration-func);
 
@@ -144,18 +154,18 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-}
+} */
 
-.menu-link:hover,
+/* .menu-link:hover,
 .menu-link:focus {
   color: var(--pressed-state-color);
-}
+} */
 
 .current {
   color: var(--pressed-state-color);
 }
 
-.current::after {
+/* .current::after {
   content: '';
 
   position: absolute;
@@ -168,14 +178,18 @@ body {
 
   border-radius: 2px;
   background-color: var(--pressed-state-color);
-}
+} */
 
 /* Contacts */
 
-.contacts {
+.header-address {
+  font-style: normal;
+}
+
+/* .contacts {
   display: flex;
   align-items: center;
-}
+} */
 
 .contact-mail {
   margin-right: 40px;
@@ -198,6 +212,17 @@ body {
 .contact-phone:hover,
 .contact-phone:focus {
   color: var(--pressed-state-color);
+}
+
+.mobile-menu-open {
+  padding: 0;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-open-icon {
+  fill: var(--dark-color);
 }
 
 /* =================================== Hero ========================== */
@@ -257,22 +282,33 @@ body {
 
 /* =========================== Our advantages ========================= */
 
-.advantages-list {
+/* .advantages-list {
   display: flex;
   gap: 24px;
-}
+} */
 
-.advantages-list-item {
+/* .advantages-list-item:not(:last-child) {
+  margin-bottom: 72px;
+} */
+
+/* .advantages-list-item {
   flex-basis: calc((100% - 72px) / 4);
-}
+} */
 
 .advantages-subtitle {
   margin-bottom: 8px;
 
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  /* text-align: center; */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  /* font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; */
   color: var(--dark-color);
 }
 
@@ -315,12 +351,14 @@ body {
   background-color: var(--light-mode-color);
 }
 
-.team-list {
+/* .team-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
-}
+} */
 
 .team-card {
+  /* width: 264px; */
   background-color: var(--background-color);
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -377,14 +415,15 @@ body {
 
 /* ============================ Customers ============================ */
 
-.customers {
+/* .customers {
   padding-top: 130px;
   padding-bottom: 120px;
-}
+} */
 
 .customers-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
 }
 
 .customers-link {
@@ -542,17 +581,17 @@ body {
 /* ============================== Footer ============================== */
 
 .page-footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
   background-color: var(--dark-color);
 }
 
-.footer-container {
+/* .footer-container {
   display: flex;
-}
+} */
 
 .slogan {
-  width: 264px;
+  /* width: 264px; */
   margin-top: 16px;
 
   line-height: 1.5;
@@ -560,9 +599,9 @@ body {
   color: var(--accent-color);
 }
 
-.media {
+/* .media {
   margin-left: 120px;
-}
+} */
 
 .media-text,
 .footer-modal-text {
@@ -596,17 +635,17 @@ body {
   background-color: var(--success-color);
 }
 
-.footer-modal {
+/* .footer-modal {
   margin-left: 80px;
-}
+} */
 
-.footer-form {
+/* .footer-form {
   display: flex;
   gap: 24px;
-}
+} */
 
 .footer-input {
-  width: 264px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
 

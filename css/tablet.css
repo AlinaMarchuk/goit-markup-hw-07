@@ -1,0 +1,114 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 766px;
+  }
+  /* ============ Header =============== */
+
+  /* ========== Our advantages =========== */
+
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .advantages-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  /* =============== Our team =============== */
+
+  /* ================== Customers =============== */
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  /* ================= Footer ================= */
+
+  .footer-container {
+    width: 582px;
+  }
+
+  .slogan {
+    width: 264px;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+}
+
+/* ==================================================================== */
+/* ==================================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /* ========== Our advantages =========== */
+
+  .advantages-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 72px;
+  }
+
+  /* =============== Our team =============== */
+
+  .team-container {
+    width: 582px;
+    /* padding-left: 108px;
+    padding-right: 108px; */
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+    /* gap: 24px; */
+  }
+  .team-card {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  /* ================== Customers =============== */
+
+  .customers-container {
+    width: 582px;
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - 24px * 2) / 3);
+  }
+
+  /* ================= Footer ================= */
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .media {
+    margin-left: 24px;
+  }
+}
+
+/* ============================================================== */
+/* ================================================================ */
+@media screen and (max-width: 1199px) {
+  /* ========== Our advantages =========== */
+  .advantages-text {
+    font-weight: 500;
+  }
+  .thumb {
+    display: none;
+  }
+
+  /* =============== About work ============= */
+  .about-work {
+    display: none;
+  }
+
+  /* =============== Our team =============== */
+}
