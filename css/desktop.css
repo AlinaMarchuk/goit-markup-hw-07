@@ -109,4 +109,14 @@
   .footer-modal {
     margin-left: 80px;
   }
+
+  /* ===================== Modal window ================ */
+  .modal {
+    width: 408px;
+    height: 584px;
+    padding-top: 70px;
+    padding-bottom: 26px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }

@@ -29,6 +29,10 @@
     }
   }
 
+  .hero-title {
+    width: 318px;
+  }
+
   /* =========== Mobile menu =============== */
 
   .menu-phone {
@@ -38,9 +42,40 @@
   .mobile-social-list {
     gap: 56px;
   }
-
   /* =============== Our team =============== */
+
+  .team-container {
+    padding-left: 82px;
+    padding-right: 82px;
+  }
+
+  /* ======================= Modal window ================== */
+
+  .modal {
+    width: 392px;
+    height: 586px;
+    padding-top: 71px;
+    padding-bottom: 25px;
+  }
+
+  .modal-privacy {
+    font-size: 12px;
+  }
+
+  .privacy-link {
+    font-size: 12px;
+  }
 }
+
+/* =================================================================== */
+/* ===================================================================== */
+
+/* @media screen and (min-width: 480px) and (max-width: 767px) {
+  .team-container {
+    padding-left: 82px;
+    padding-right: 82px;
+  }
+} */
 
 /* ================================================================== */
 /* ================================================================== */
@@ -70,12 +105,12 @@
 
   /* ====================== Hero =============== */
 
-  .hero-title {
+  /* .hero-title {
     width: 318px;
     font-size: 36px;
     line-height: 1.11;
     text-transform: capitalize;
-  }
+  } */
 
   .hero {
     background-position: center;
@@ -92,13 +127,14 @@
   }
 
   /* =============== Our team =============== */
-  .team {
-    padding-bottom: 128px;
-  }
 
-  .team-container {
+  /* .team-container {
     padding-left: 82px;
     padding-right: 82px;
+  } */
+
+  .team {
+    padding-bottom: 128px;
   }
 
   .team-card:not(:last-child) {

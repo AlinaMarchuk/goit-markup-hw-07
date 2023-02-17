@@ -32,7 +32,7 @@ address {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 .list {
@@ -401,14 +401,15 @@ body {
 }
 
 .hero-title {
-  /* width: 495px; */
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
 
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
   text-align: center;
   color: var(--button-color);
 }
@@ -503,6 +504,11 @@ body {
 
 /* =============================== Our team =========================== */
 
+.team-container {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 .team {
   background-color: var(--light-mode-color);
 }
@@ -515,6 +521,7 @@ body {
 
 .team-card {
   /* width: 264px; */
+  width: 100%;
   background-color: var(--background-color);
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -877,12 +884,12 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-duration-func);
 
-  width: 408px;
-  height: 584px;
+  width: 100%;
+  height: auto;
   padding-top: 72px;
   padding-bottom: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -1025,7 +1032,7 @@ body {
   align-items: center;
   margin-bottom: 24px;
 
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.33px;
   letter-spacing: 0.04em;
   color: #757575;
@@ -1058,7 +1065,7 @@ body {
 }
 
 .privacy-link {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: var(--primary-brand-color);
