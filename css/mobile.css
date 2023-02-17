@@ -24,6 +24,27 @@
     display: none;
   }
 
+  .menu-link {
+    position: relative;
+    transition: color var(--transition-duration-func);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark-color);
+  }
+
+  /* ====================== Hero =============== */
+
+  .hero-title {
+    width: 318px;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+  }
+
   /* ========== Our advantages =========== */
 
   .advantages-list-item:not(:last-child) {
