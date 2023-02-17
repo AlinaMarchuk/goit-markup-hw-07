@@ -3,7 +3,7 @@
     width: 766px;
   }
 
-  /* ============ Header =============== */
+  /* ============ Header ============= */
 
   .logo {
     margin-right: 120px;
@@ -24,13 +24,10 @@
   }
 
   .menu-link {
-    position: relative;
-    transition: color var(--transition-duration-func);
-
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--dark-color);
   }
 
   .menu-link:hover,
@@ -57,10 +54,6 @@
     background-color: var(--pressed-state-color);
   }
 
-  .mobile-menu-open {
-    display: none;
-  }
-
   .contact-mail,
   .contact-phone {
     transition: color var(--transition-duration-func);
@@ -71,33 +64,21 @@
     color: var(--text-color);
   }
 
+  .contact-mail:hover,
+  .contact-mail:focus {
+    color: var(--pressed-state-color);
+  }
+
+  .contact-phone:hover,
+  .contact-phone:focus {
+    color: var(--pressed-state-color);
+  }
+
   .menu-open-btn {
     display: none;
   }
 
   /* ================== Hero ================== */
-
-  /* .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero/bg.jpg);
-    padding-top: 188px;
-    padding-bottom: 188px;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/hero/hero-img-desk@2x.jpg);
-    }
-  } */
 
   .hero {
     background-image: linear-gradient(
@@ -105,6 +86,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/hero-img-tab.jpg);
+
     padding-top: 112px;
     padding-bottom: 108px;
   }
@@ -123,6 +105,8 @@
 
   .hero-title {
     width: 494px;
+    margin-bottom: 40px;
+
     font-size: 56px;
     line-height: 1.07;
   }
@@ -144,6 +128,10 @@
   .team-container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .team-list {
+    display: flex;
   }
 
   .team-card {
@@ -177,7 +165,7 @@
     width: 264px;
   }
 
-  /* ======================== Modal window ==================== */
+  /* ================ Modal window ============= */
 
   .modal {
     width: 408px;
@@ -191,7 +179,7 @@
 /* ==================================================================== */
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  /* ================== Header ===================== */
+  /* ================== Header ================= */
 
   .header-address {
     margin-bottom: -14px;
@@ -207,18 +195,16 @@
 
   .team-container {
     width: 582px;
-    /* padding-left: 108px;
-    padding-right: 108px; */
   }
 
   .team-list {
-    display: flex;
     flex-wrap: wrap;
     row-gap: 64px;
     column-gap: 24px;
-    /* gap: 24px; */
   }
+
   .team-card {
+    /* width: 264px; */
     flex-basis: calc((100% - 24px) / 2);
   }
 
@@ -233,34 +219,7 @@
   }
 
   /* ================= Footer ================= */
-
   .media {
     margin-left: 24px;
-  }
-}
-
-/* ============================================================== */
-/* ================================================================ */
-
-@media screen and (max-width: 1199px) {
-  /* ========== Our advantages =========== */
-  .advantages-text {
-    font-weight: 500;
-  }
-  .thumb {
-    display: none;
-  }
-
-  /* =============== About work ============= */
-  .about-work {
-    display: none;
-  }
-
-  /* =============== Our team =============== */
-
-  /* ================= Footer ================= */
-
-  .footer-box {
-    margin-bottom: 72px;
   }
 }

@@ -5,7 +5,15 @@
     margin-left: auto;
   }
 
-  /* ============ Header =============== */
+  /* =========== Mobile menu =============== */
+
+  .menu-phone {
+    font-size: 36px;
+  }
+
+  .mobile-social-list {
+    gap: 56px;
+  }
 
   /* ============= Hero =================== */
 
@@ -33,15 +41,6 @@
     width: 318px;
   }
 
-  /* =========== Mobile menu =============== */
-
-  .menu-phone {
-    font-size: 36px;
-  }
-
-  .mobile-social-list {
-    gap: 56px;
-  }
   /* =============== Our team =============== */
 
   .team-container {
@@ -49,7 +48,7 @@
     padding-right: 82px;
   }
 
-  /* ======================= Modal window ================== */
+  /* ================ Modal window ============= */
 
   .modal {
     width: 392px;
@@ -64,126 +63,5 @@
 
   .privacy-link {
     font-size: 12px;
-  }
-}
-
-/* =================================================================== */
-/* ===================================================================== */
-
-/* @media screen and (min-width: 480px) and (max-width: 767px) {
-  .team-container {
-    padding-left: 82px;
-    padding-right: 82px;
-  }
-} */
-
-/* ================================================================== */
-/* ================================================================== */
-
-@media screen and (max-width: 767px) {
-  /* ============ Header =============== */
-
-  .menu {
-    display: none;
-  }
-
-  .contacts {
-    display: none;
-  }
-
-  .menu-link {
-    position: relative;
-    transition: color var(--transition-duration-func);
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--dark-color);
-  }
-
-  /* ====================== Hero =============== */
-
-  /* .hero-title {
-    width: 318px;
-    font-size: 36px;
-    line-height: 1.11;
-    text-transform: capitalize;
-  } */
-
-  .hero {
-    background-position: center;
-  }
-
-  /* ========== Our advantages =========== */
-
-  .advantages-list-item:not(:last-child) {
-    margin-bottom: 72px;
-  }
-
-  .advantages-subtitle {
-    text-align: center;
-  }
-
-  /* =============== Our team =============== */
-
-  /* .team-container {
-    padding-left: 82px;
-    padding-right: 82px;
-  } */
-
-  .team {
-    padding-bottom: 128px;
-  }
-
-  .team-card:not(:last-child) {
-    margin-bottom: 72px;
-  }
-
-  /* ================== Customers =============== */
-
-  .customers-list {
-    gap: 16px;
-  }
-
-  .customers-item {
-    flex-basis: calc((100% - 16px) / 2);
-  }
-
-  .customers-link {
-    width: 190px;
-  }
-
-  /* ================= Footer ================= */
-  .footer-container {
-    text-align: center;
-  }
-
-  .footer-logo {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .slogan {
-    width: 268px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .media {
-    width: 208px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 72px;
-  }
-
-  .footer-input {
-    margin-bottom: 16px;
-  }
-
-  .subscribe-btn {
-    margin-right: auto;
-    margin-left: auto;
   }
 }
