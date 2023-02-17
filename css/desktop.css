@@ -10,6 +10,10 @@
 
   /* ============ Header =============== */
 
+  .logo {
+    margin-right: 76px;
+  }
+
   .contacts {
     display: flex;
     align-items: center;
@@ -22,6 +26,10 @@
     letter-spacing: 0.02em;
   }
 
+  .contact-mail {
+    margin-right: 40px;
+  }
+
   /* ================== Hero ================== */
 
   .hero {
@@ -30,6 +38,8 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/bg.jpg);
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 
   @media (min-device-pixel-ratio: 2),

@@ -7,6 +7,38 @@
 
   /* ============ Header =============== */
 
+  /* ============= Hero =================== */
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-img-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/hero-img-tab@2x.jpg);
+    }
+  }
+
+  /* =========== Mobile menu =============== */
+
+  .menu-phone {
+    font-size: 36px;
+  }
+
+  .mobile-social-list {
+    gap: 56px;
+  }
+
   /* =============== Our team =============== */
 }
 
@@ -43,6 +75,10 @@
     font-size: 36px;
     line-height: 1.11;
     text-transform: capitalize;
+  }
+
+  .hero {
+    background-position: center;
   }
 
   /* ========== Our advantages =========== */
