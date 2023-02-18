@@ -48,6 +48,12 @@
     padding-right: 82px;
   }
 
+  /* ================== Customers =============== */
+
+  .customers-link {
+    width: 190px;
+  }
+
   /* ================ Modal window ============= */
 
   .modal {

@@ -144,6 +144,10 @@
     gap: 24px;
   }
 
+  .customers-link {
+    width: 168px;
+  }
+
   /* ================= Footer ================= */
 
   .footer-container {
